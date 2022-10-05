@@ -8,6 +8,17 @@ public class Book {
         this.title = title;
     }
 
+    public Book(String paragraph, String image) {
+        this.paragraph = paragraph;
+        this.image = image;
+    }
+
+    public Book(String paragraph, String image, String table) {
+        this.paragraph = paragraph;
+        this.image = image;
+        this.table = table;
+    }
+
     public void createNewParagraph(String s) {
         this.paragraph=s;
     }
@@ -20,8 +31,8 @@ public class Book {
         this.table=s;
     }
 
-    public void print() {
-        toString();
+    public String print() {
+        return toString();
     }
 
     @Override
