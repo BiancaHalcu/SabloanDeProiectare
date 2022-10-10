@@ -8,7 +8,6 @@ public class Main {
         discoTitanic.createNewParagraph("Paragraph 4");
         discoTitanic.createNewTable("Table 1");
         discoTitanic.createNewParagraph("Paragraph 5");
-
         discoTitanic.print();
     }
 }
