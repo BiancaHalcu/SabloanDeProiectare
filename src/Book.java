@@ -24,6 +24,6 @@ public class Book {
     }
 
     public Chapter getChapter(int indexChapterOne) {
-        return chapter.get(indexChapterOne);
+        return chapter.get(indexChapterOne-1);
     }
 }

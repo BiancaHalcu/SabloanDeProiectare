@@ -6,6 +6,6 @@ public class Table {
     }
 
     public void print(){
-        System.out.println(title);
+        System.out.println("Table with name: "+title);
     }
 }

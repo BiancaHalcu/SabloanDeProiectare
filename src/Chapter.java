@@ -15,7 +15,7 @@ public class Chapter {
     }
 
     public SubChapter getSubChapter(int indexSubChapterOneOne) {
-        return subChapters.get(indexSubChapterOneOne);
+        return subChapters.get(indexSubChapterOneOne-1);
     }
     public void print(){
         System.out.println(name);

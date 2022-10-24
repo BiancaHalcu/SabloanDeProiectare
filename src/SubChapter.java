@@ -24,6 +24,9 @@ public class SubChapter {
     }
 
     public void print(){
-        System.out.println(name);
+        System.out.println("Subchapter: "+name);
+        paragraph.stream().forEach(s->s.print());
+        image.stream().forEach(s->s.print());
+        table.stream().forEach(s->s.print());
     }
 }

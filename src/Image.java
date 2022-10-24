@@ -5,6 +5,6 @@ public class Image {
         this.imageName = imageName;
     }
     public void print(){
-        System.out.println(imageName);
+        System.out.println("Image with name: "+imageName);
     }
 }
