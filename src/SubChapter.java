@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class SubChapter {
+public class SubChapter implements Element{
     private String name;
     private List<Image> image=new ArrayList<>();
     private List<Paragraph> paragraph = new ArrayList<>();
