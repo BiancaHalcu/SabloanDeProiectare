@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class SubChapter implements Element{
+public class SubChapter {
     private String name;
     private List<Image> image=new ArrayList<>();
     private List<Paragraph> paragraph = new ArrayList<>();
@@ -29,4 +29,5 @@ public class SubChapter implements Element{
         image.stream().forEach(s->s.print());
         table.stream().forEach(s->s.print());
     }
+
 }

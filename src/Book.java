@@ -11,7 +11,7 @@ public class Book {
     }
 
     public void print() {
-        System.out.println(title);
+        System.out.println("Book: " + title);
     }
 
     public void addAuthor(Author rpGheo) {
@@ -25,5 +25,10 @@ public class Book {
 
     public Chapter getChapter(int indexChapterOne) {
         return chapter.get(indexChapterOne-1);
+    }
+
+    public void addContent(Element e) {
+        Section s = new Section();
+        s.add(e);
     }
 }
