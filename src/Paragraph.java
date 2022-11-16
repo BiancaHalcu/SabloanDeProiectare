@@ -1,3 +1,5 @@
+import javax.naming.Context;
+
 public class Paragraph implements Element{
     private String text;
 
@@ -23,4 +25,10 @@ public class Paragraph implements Element{
     public Element get(int e) {
         return null;
     }
+
+    public void setAlignStrategy(AlignStrategy alignStrategy) {
+        //declarare +set stategy aligns.render(this);
+    }
+
+
 }
