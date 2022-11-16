@@ -15,6 +15,7 @@ public class Section implements Element{
 
     @Override
     public void print() {
+        System.out.println(text);
         Iterator<Element> it = elementList.iterator();
         while(it.hasNext())  {
             Element employee = it.next();
