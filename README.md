@@ -12,3 +12,7 @@ https://github.com/BiancaHalcu/SabloaneDeProiectare/tree/e381ae38e747e98557813bb
 - return the index in the list (size() - 1) and at get just return the element at index received as parameter
 
 Nota 10
+
+missing lab 5-6
+# Nota finala
+7
