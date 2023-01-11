@@ -11,6 +11,7 @@ public class Paragraph implements Element{
         System.out.println("Paragraph: "+text);
     }
 
+
     @Override
     public void add(Element e) {
 
@@ -26,7 +27,16 @@ public class Paragraph implements Element{
         return null;
     }
 
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public String getText() {
+        return text;
+    }
+
     public void setAlignStrategy(AlignStrategy alignStrategy) {
+        alignStrategy.render(this);
         //declarare +set stategy aligns.render(this);
     }
 
