@@ -1,4 +1,6 @@
-public class Table implements Element{
+package models;
+
+public class Table implements Element, Visitee{
     private String title;
 
     public Table(String title) {
@@ -6,7 +8,7 @@ public class Table implements Element{
     }
     @Override
     public void print(){
-        System.out.println("Table with name: "+title);
+        System.out.println("models.Table with name: "+title);
     }
 
     @Override
@@ -22,5 +24,10 @@ public class Table implements Element{
     @Override
     public Element get(int e) {
         return null;
+    }
+
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitTable(this);
     }
 }

@@ -1,8 +1,10 @@
+package models;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Section implements Element{
+public class Section implements Element, Visitee{
     String text;
 
     public Section(String s) {
@@ -38,4 +40,10 @@ public class Section implements Element{
         return elementList.get(e);
     }
 
+    @Override
+    public void accept(Visitor visitor) {
+        for (Element el : elementList) {
+            el.accept(visitor);
+        }
+    }
 }

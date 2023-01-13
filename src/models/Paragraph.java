@@ -1,6 +1,8 @@
-import javax.naming.Context;
+package models;
 
-public class Paragraph implements Element{
+import services.AlignStrategy;
+
+public class Paragraph implements Element, Visitee{
     private String text;
 
     public Paragraph(String text) {
@@ -8,7 +10,7 @@ public class Paragraph implements Element{
     }
     @Override
     public void print(){
-        System.out.println("Paragraph: "+text);
+        System.out.println("models.Paragraph: "+text);
     }
 
 
@@ -27,6 +29,7 @@ public class Paragraph implements Element{
         return null;
     }
 
+
     public void setText(String text) {
         this.text = text;
     }
@@ -41,4 +44,8 @@ public class Paragraph implements Element{
     }
 
 
+    @Override
+    public void accept(Visitor visitor) {
+        visitor.visitParagraph(this);
+    }
 }
